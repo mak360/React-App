@@ -1,6 +1,6 @@
 import ListGroup from "./components/ListGroup";
 
-const items = ["Tokyo", "Dhaka", "New York", "Munikh", "Bon"];
+const items = ["Tokyo", "Dhaka", "New York", "Munikh", "Bon", "London"];
 
 const handleSelectItem = (item: string) => {
   console.log(item);
