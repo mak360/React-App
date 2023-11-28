@@ -1,11 +1,16 @@
-import Alert from "./components/Alert.";
+import Button from "./components/Button";
 
 const App = () => {
   return (
     <div>
-      <Alert>
-        <strong>Hello World</strong> 👋
-      </Alert>
+      <Button
+        color="danger"
+        onClick={() => {
+          console.log("Yo");
+        }}
+      >
+        Hello World
+      </Button>
     </div>
   );
 };
