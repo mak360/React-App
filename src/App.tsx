@@ -1,19 +1,11 @@
-import ListGroup from "./components/ListGroup";
-
-const items = ["Tokyo", "Dhaka", "New York", "Munikh", "Bon", "London"];
-
-const handleSelectItem = (item: string) => {
-  console.log(item);
-};
+import Alert from "./components/Alert.";
 
 const App = () => {
   return (
     <div>
-      <ListGroup
-        items={items}
-        heading="Cities"
-        onSelectItem={handleSelectItem}
-      />
+      <Alert>
+        <strong>Hello World</strong> 👋
+      </Alert>
     </div>
   );
 };
