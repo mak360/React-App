@@ -1,11 +1,10 @@
-import { useState } from "react";
-
 interface Props {
   items: string[];
   heading: string;
+  onSelectItem: (item: string) => void;
 }
 
-const ListGroup = ({ items, heading }: Props) => {
+const ListGroup = ({ items, heading, onSelectItem }: Props) => {
   const [selectedItem, setSelectedItem] = useState(-1);
 
   return (
@@ -15,7 +14,10 @@ const ListGroup = ({ items, heading }: Props) => {
       <ul className="list-group">
         {items.map((item, index) => (
           <li
-            onClick={() => setSelectedItem(index)}
+            onClick={() => {
+              setSelectedItem(index);
+              onSelectItem(item);
+            }}
             key={item}
             className={
               selectedItem === index
