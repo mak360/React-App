@@ -12,7 +12,7 @@ const App = () => {
       )}
 
       <Button
-        color="danger"
+        color="warning"
         onClick={() => {
           setAlertVisibility(true);
         }}
